@@ -20,12 +20,13 @@ public class SecondActivity extends AppCompatActivity {
         Intent intent = getIntent();
         message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
         name = findViewById(R.id.nama);
-        name.setText(message);
+        name.setText("Hallo " + message);
+
 
         btn1=findViewById(R.id.btnup);
         btn2=findViewById(R.id.btndown);
         result=findViewById(R.id.hasil);
-        angka=17;
+        angka=16;
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override

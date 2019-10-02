@@ -11,22 +11,27 @@
         android:id="@+id/btn_lanjut"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="170dp"
         android:layout_marginBottom="180dp"
-        android:text="@string/btn_lanjut"
         android:onClick="launchSecondActivity"
+        android:text="@string/btn_lanjut"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text_Nama"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/Text_Nama"
+        android:id="@+id/text_Nama"
         android:layout_width="602dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="170dp"
+        android:layout_marginBottom="180dp"
         android:ems="10"
+        android:hint="@string/text_inputNama"
         android:inputType="textPersonName"
-        android:text="@string/Text_Nama"
+        android:textAlignment="textEnd"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btn_lanjut"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="186dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

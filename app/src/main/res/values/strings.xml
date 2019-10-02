@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">D1041161016_tugasToastActiv</string>
     <string name="btn_lanjut">Lanjut</string>
-    <string name="text_Nama">Masukkan Nama</string>
-    <string name="Text_Nama">Text_Nama</string>
+
+    <string name="text_inputNama">Masukkan Nama</string>
+    <string name="countup">CountUp</string>
+    <string name="countdown">CountDown</string>
 </resources>

@@ -9,6 +9,8 @@ import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
+    EditText text_inputNama;
+
     public static final String EXTRA_MESSAGE =
             "com.example.android.d1041161016_tugastoastactiv.extra.MESSAGE";
 
@@ -18,13 +20,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        input = findViewById(R.id.inputnama);
+        text_inputNama = findViewById(R.id.text_Nama);
     }
 
     public void launchSecondActivity(View view) {
-        String message = input.getText().toString();
+        String message = text_inputNama.getText().toString();
         Intent intent = new Intent(this, SecondActivity.class);
-        message = input.getText().toString();
+        message = text_inputNama.getText().toString();
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivityForResult(intent, TEXT_REQUEST);
     }
